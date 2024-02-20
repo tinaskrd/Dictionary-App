@@ -16,7 +16,8 @@
 		374A1EA52A084034002ED90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374A1EA42A084034002ED90B /* Assets.xcassets */; };
 		374A1EA82A084034002ED90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374A1EA62A084034002ED90B /* LaunchScreen.storyboard */; };
 		374A1EB12A0840BC002ED90B /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 374A1EB02A0840BC002ED90B /* CocoaAsyncSocket */; };
-		3786C9112AE9825C00E188AF /* srv1.py in Resources */ = {isa = PBXBuildFile; fileRef = 3786C9102AE9825C00E188AF /* srv1.py */; };
+		37E692012B8551250040A816 /* engRus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37E691FF2B8551240040A816 /* engRus.txt */; };
+		37E692022B8551250040A816 /* serverDictApp.py in Resources */ = {isa = PBXBuildFile; fileRef = 37E692002B8551250040A816 /* serverDictApp.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,8 @@
 		374A1EA42A084034002ED90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		374A1EA72A084034002ED90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		374A1EA92A084034002ED90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3786C9102AE9825C00E188AF /* srv1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = srv1.py; path = ../../../srv1.py; sourceTree = "<group>"; };
+		37E691FF2B8551240040A816 /* engRus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = engRus.txt; sourceTree = "<group>"; };
+		37E692002B8551250040A816 /* serverDictApp.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serverDictApp.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,14 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37140A1E2A44A666001C83E0 /* Server */ = {
-			isa = PBXGroup;
-			children = (
-				3786C9102AE9825C00E188AF /* srv1.py */,
-			);
-			path = Server;
-			sourceTree = "<group>";
-		};
 		37140A232A44BB7A001C83E0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +75,7 @@
 		374A1E9A2A08402B002ED90B /* DictionaryUDPApp */ = {
 			isa = PBXGroup;
 			children = (
-				37140A1E2A44A666001C83E0 /* Server */,
+				37E692032B85513A0040A816 /* ServerFiles */,
 				374A1E9B2A08402B002ED90B /* AppDelegate.swift */,
 				374A1E9D2A08402B002ED90B /* SceneDelegate.swift */,
 				37140A232A44BB7A001C83E0 /* ViewControllers */,
@@ -92,6 +86,15 @@
 				374A1EA92A084034002ED90B /* Info.plist */,
 			);
 			path = DictionaryUDPApp;
+			sourceTree = "<group>";
+		};
+		37E692032B85513A0040A816 /* ServerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				37E691FF2B8551240040A816 /* engRus.txt */,
+				37E692002B8551250040A816 /* serverDictApp.py */,
+			);
+			path = ServerFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E692012B8551250040A816 /* engRus.txt in Resources */,
+				37E692022B8551250040A816 /* serverDictApp.py in Resources */,
 				374A1EA82A084034002ED90B /* LaunchScreen.storyboard in Resources */,
 				374A1EA52A084034002ED90B /* Assets.xcassets in Resources */,
-				3786C9112AE9825C00E188AF /* srv1.py in Resources */,
 				374A1EA32A08402B002ED90B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

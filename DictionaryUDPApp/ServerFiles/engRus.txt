@@ -1,0 +1,6 @@
+program программа
+network сеть
+developer разработчик
+computer компьютер
+laptop ноутбук
+internet интернет

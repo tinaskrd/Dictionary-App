@@ -18,7 +18,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkManager = NetworkManager(messageLabel: translatedWordLabel) 
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        networkManager = NetworkManager(messageLabel: translatedWordLabel)
         networkManager?.connect()
     }
     
@@ -35,7 +36,7 @@ class MainViewController: UIViewController {
     
     @IBAction func exitButtonHit() {
         networkManager?.send(message: "disconnect")
-        dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
